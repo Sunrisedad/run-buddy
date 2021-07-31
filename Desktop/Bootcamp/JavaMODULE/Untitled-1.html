@@ -1,0 +1,32 @@
+<!<!DOCTYPE html>
+
+<html> <head> <body> <script type="text/javascript" ></script> <title>Jiggle Into JavaScript</title> <button id="Blue" onclick="Blue()">Blue</button> <button id="Grow" onclick="Grow()">Grow</button> <button id="Fade" onclick="Fade()">Fade</button> <button id="Reset" onclick="Reset()">Reset</button> <div id="box" style="height:150px; width:150px; background-color:orange; margin:25px"></div> <script>
+
+    document.getElementById("Blue").addEventListener("click", function Blue(){
+
+            document.getElementById("box").style.backgroundColor = "blue";
+});
+    document.getElementById("Grow").addEventListener("click", function Grow(){
+
+            document.getElementById("box").style.height = "250px";
+});
+    document.getElementById("Fade").addEventListener("click", function Fade(){
+
+            document.getElementById("box").style.opacity = "0.5";
+});
+
+    document.getElementById("Reset").addEventListener("click", function Reset(){
+
+            document.getElementById("box").style.height = "150px";
+});
+    document.getElementById("Reset").addEventListener("click", function Reset(){
+
+            document.getElementById("box").style.opacity = "1";
+});
+
+     document.getElementById("Reset").addEventListener("click", function Reset(){
+
+        document.getElementById("box").style.backgroundColor = "orange";
+});
+
+</script> </body> </html>
